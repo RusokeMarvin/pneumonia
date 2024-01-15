@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "pneumonia/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "pneumonia/wsgi.py"
+      }
+    ]
+}
